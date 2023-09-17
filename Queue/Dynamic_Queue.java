@@ -53,6 +53,7 @@ public class Dynamic_Queue {
     			System.out.print(t.data+"|->");
     			t=t.next;
     		}
+	        System.out.println();
     	}
     }
     public static void main(String[] args) {
