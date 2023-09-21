@@ -47,26 +47,6 @@ public class Graph {
 			}
 		}
 	}
-	void BFS(int source)
-	{
-		int q[]=new int[v];
-		int front=0,rear=-1;
-		visited[source]=1;
-		q[++rear]=source;
-		while(front<=rear)
-		{
-			int element=q[front++];
-			System.out.print("V"+element+" ");
-			for(i=0;i<v;i++)
-			{
-				if(g[element][i]==1 && visited[i]!=1)
-				{
-					visited[i]=1;
-					q[++rear]=i;    
-				}
-			}
-		}
-	}
 	public static void main(String[] args) {
 		
 		Graph obj=new Graph();
